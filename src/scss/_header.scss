@@ -1,0 +1,74 @@
+.header{
+  height: 100vh;
+  background:url('../img/bg.jpeg') no-repeat center / cover;
+  color:$color-white;
+  font-size: 16px;
+  position: relative;
+  &:before{
+    content:"";
+    display: block;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+  }
+  a{
+    color:$color-white;
+  }
+  &__top{
+    a,address,span{
+      font-size: 18px;
+      font-family: $font-mer;
+      font-weight: 700;
+    }
+    &__logo{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      img{
+        width: 50%;
+        max-height: 64px;
+      }
+    }
+  }
+  &__bottom{
+    &__content{
+      margin-top: 30vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 0;
+    }
+    .title-main{
+      margin-bottom:10px;
+      h1{
+        font-weight: 700;
+        font-size: 48px;
+        margin: 0;
+        font-family: $font-mer;
+      }
+    }
+    .subtitle-main{
+      margin-bottom:30px;
+      p{
+        font-weight: 700;
+        font-size: 32px;
+        color:$color-white;
+        font-family: $font-mer;
+      }
+    }
+    &__info{
+      margin-bottom: 30px;
+      p{
+        color:$color-white;
+      }
+    }
+    &__phone{
+      a{
+        font-family: $font-mer;
+      }
+    }
+  }
+}

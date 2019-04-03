@@ -1,0 +1,28 @@
+.price{
+  .price-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:5px solid $color-green;
+    padding: 20px 0px;
+    margin-bottom: 40px;
+    h4{
+      font-size: 18px;
+      font-family: $font-mer;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    img{
+      width: 150px;
+      margin-bottom: 15px;
+    }
+    span{
+      font-size: 16px;
+      font-family: $font-mer;
+      margin-bottom: 15px;
+    }
+    a{
+      font-size: 16px;
+    }
+  }
+}

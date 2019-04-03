@@ -16,6 +16,7 @@ function stylesLibs() {
   var cssPaths = [
     './node_modules/bootstrap/dist/css/bootstrap.css',
     './node_modules/normalize.css/normalize.css',
+    './src/scss/slick.css'
   ]
   return gulp.src(cssPaths)
     .pipe(plumber())
@@ -34,7 +35,8 @@ function stylesLibs() {
 function scriptsLibs(){
   const scriptsLibs = [
     './node_modules/jquery/dist/jquery.js',
-    './node_modules/bootstrap/dist/js/bootstrap.js'
+    './node_modules/bootstrap/dist/js/bootstrap.js',
+    './src/js/slick.js'
   ];
   return gulp.src(scriptsLibs)
     .pipe(sourcemaps.init())

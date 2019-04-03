@@ -16,10 +16,9 @@ function stylesLibs() {
   var cssPaths = [
     './node_modules/bootstrap/dist/css/bootstrap.css',
     './node_modules/normalize.css/normalize.css',
-    './node_modules/simplebar/dist/simplebar.css',
-    './node_modules/hamburgers/dist/hamburgers.css'
   ]
   return gulp.src(cssPaths)
+    .pipe(plumber())
     .pipe(concat('libs.css'))
     .pipe(autoprefixer({
       browsers: ['> 0.1%'],
@@ -28,15 +27,14 @@ function stylesLibs() {
     .pipe(cleanCSS({
       level: 2
     }))
-    .pipe(gulp.dest('./build/css'))
+    .pipe(gulp.dest('./build/css'));
 }
 
 // Gulp function for gulp task scriptLibs
 function scriptsLibs(){
   const scriptsLibs = [
     './node_modules/jquery/dist/jquery.js',
-    './node_modules/bootstrap/dist/js/bootstrap.js',
-    './node_modules/simplebar/dist/simplebar.js'
+    './node_modules/bootstrap/dist/js/bootstrap.js'
   ];
   return gulp.src(scriptsLibs)
     .pipe(sourcemaps.init())
@@ -79,8 +77,7 @@ function styles(){
 // Gulp function for gulp task Customs script
 function scripts(){
   const jsPaths = [
-    './src/js/main.js',
-    './src/js/map.js'
+    './src/js/main.js'
   ]
   return gulp.src(jsPaths)
     .pipe(sourcemaps.init())
@@ -126,7 +123,7 @@ function watch(){
 
 //Gulp Remove all in ./build
 function clean(){
-  return del(['build/*'])
+  return del(['build/*']);
 }
 
 //Gulp Tasks

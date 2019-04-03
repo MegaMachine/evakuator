@@ -4,6 +4,5 @@ $('.photos__slider').slick({
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 2000,
-    dots: true,
-    // adaptiveHeight: true
+    dots: true
 });

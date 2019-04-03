@@ -1,0 +1,16 @@
+.footer{
+  background-color:$color-black;
+  padding: 25px 0px;
+  p,a,address,span{
+    font-size: 18px;
+    font-family: $font-mer;
+    font-weight: 700;
+    color:$color-white;
+  }
+  a{
+    color:$color-green;
+  }
+  p{
+    font-size: 16px;
+  }
+}

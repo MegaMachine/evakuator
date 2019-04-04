@@ -41,6 +41,10 @@ address{
   position: relative;
   z-index: 1;
   font-weight: 700;
+  &:hover{
+    color:$color-white;
+
+  }
 }
 
 .section-title{
@@ -82,3 +86,4 @@ address{
     }
   }
 }
+

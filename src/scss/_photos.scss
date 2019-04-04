@@ -26,6 +26,7 @@
       top:50%;
       &:hover{
         border-color: $color-green;
+        cursor: pointer;
       }
       &:focus{
         outline: none;

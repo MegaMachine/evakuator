@@ -5,6 +5,9 @@
   font-size: 16px;
   position: relative;
   z-index: 0;
+  @include mqmax($size-md){
+    height: auto;
+  }
   &:before{
     content:"";
     display: block;
@@ -19,10 +22,19 @@
     color:$color-white;
   }
   &__top{
+    .row{
+      &>div{
+        text-align: center;
+      }
+    }
     a,address,span{
       font-size: 18px;
       font-family: $font-mer;
       font-weight: 700;
+      text-align: center;
+      @include mqmax($size-md){
+        font-size: 13px;
+      }
     }
     &__logo{
       width: 100%;
@@ -31,6 +43,7 @@
       img{
         width: 50%;
         max-height: 64px;
+        filter:invert(1);
       }
     }
   }
@@ -41,14 +54,26 @@
       flex-direction: column;
       align-items: center;
       padding: 40px 0;
+      @include mqmax($size-sm){
+        margin-top: 0px;
+      }
+      &>div{
+        text-align: center;
+      }
     }
     .title-main{
       margin-bottom:10px;
+      @include mqmax($size-sm){
+        margin-bottom: 30px;
+      }
       h1{
         font-weight: 700;
         font-size: 48px;
         margin: 0;
         font-family: $font-mer;
+        @include mqmax($size-sm){
+          font-size: 36px;
+        }
       }
     }
     .subtitle-main{
@@ -58,6 +83,9 @@
         font-size: 32px;
         color:$color-white;
         font-family: $font-mer;
+        @include mqmax($size-sm){
+          font-size: 24px;
+        }
       }
     }
     &__info{

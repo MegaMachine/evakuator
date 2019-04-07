@@ -1,11 +1,18 @@
 .footer{
   background-color:$color-black;
   padding: 25px 0px;
+  .row{
+    &>div{
+      text-align: center;
+    }
+  }
   p,a,address,span{
     font-size: 18px;
     font-family: $font-mer;
     font-weight: 700;
     color:$color-white;
+    text-align: center;
+    // @include mqmax($s)
   }
   a{
     color:$color-green;

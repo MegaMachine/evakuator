@@ -1,4 +1,7 @@
 .price{
+  .row{
+    align-items: stretch;
+  }
   .price-item{
     display: flex;
     flex-direction: column;
@@ -6,11 +9,13 @@
     border:5px solid $color-green;
     padding: 20px 0px;
     margin-bottom: 40px;
+    height:400px;
     h4{
       font-size: 18px;
       font-family: $font-mer;
       font-weight: 700;
       margin-bottom: 20px;
+      text-align: center;
     }
     img{
       width: 150px;
@@ -23,6 +28,8 @@
     }
     a{
       font-size: 16px;
+      position: absolute;
+      bottom: 90px;
     }
   }
 }

@@ -1,15 +1,28 @@
 .suggestions{
   margin-bottom: -60px;
-  @include mqmax($size-sm){
-    margin-bottom: -110px;
+  .row{
+    &:last-of-type>div{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 60px;
+      @include mqmax($size-sm){
+        margin-bottom: 110px;
+      }
+    }
+  }
+  .section-text{
+    @include mqmax($size-sm){
+      margin-bottom: 75px;
+    }
   }
   &__item{
-    position: relative;
-    margin-bottom: 60px;
+    // position: relative;
+    // margin-bottom: 60px;
     text-align: center;
-    @include mqmax($size-sm){
-      margin-bottom: 110px;
-    }
+    // @include mqmax($size-sm){
+    //   margin-bottom: 110px;
+    // }
     &__number{
       position: absolute;
       top:50%;

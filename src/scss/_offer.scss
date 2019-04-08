@@ -1,0 +1,26 @@
+.offer{
+  .section-title{
+    margin-bottom: 40px;
+  }
+  .row{
+    &>div{
+      margin-left: 25vw;
+      @include mqmax($size-xs){
+        margin-left: 15vw;
+      }
+    }
+  }
+  p{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    &:before{
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url(../img/check-mark.svg) center/cover no-repeat;
+      margin-right: 20px;
+    }
+  }
+}

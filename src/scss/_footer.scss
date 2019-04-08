@@ -4,6 +4,12 @@
   .row{
     &>div{
       text-align: center;
+      order: 1;
+      &:first-child{
+        @include mqmax($size-sm){
+          order:2;
+        }
+      }
     }
   }
   p,a,address,span{
@@ -12,7 +18,11 @@
     font-weight: 700;
     color:$color-white;
     text-align: center;
-    // @include mqmax($s)
+    margin: 0;
+    display: block;
+    @include mqmax($size-sm){
+      margin-bottom: 10px;
+    }
   }
   a{
     color:$color-green;

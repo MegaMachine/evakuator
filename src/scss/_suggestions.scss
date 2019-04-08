@@ -1,6 +1,17 @@
 .suggestions{
   margin-bottom: -60px;
   .row{
+    &>div{
+      @include mqmax($size-md){
+        margin-bottom: 100px;
+      }
+      @include mqmax($size-sm){
+        margin-bottom: 140px;
+      }
+      &:last-of-type{
+        margin-bottom: 20px;
+      }
+    }
     &:last-of-type>div{
       display: flex;
       justify-content: center;
@@ -49,4 +60,8 @@
       font-family: $font-mer;
     }
   }
+}
+
+.mega-btn{
+  margin-top: 60px;
 }

@@ -9,17 +9,25 @@
     border:5px solid $color-green;
     padding: 20px 0px;
     margin-bottom: 40px;
-    height:400px;
+    height:350px;
+    @include mqmax($size-sm){
+      height:300px;
+      border-width: 3px;
+      margin-bottom: 20px;
+    }
     h4{
       font-size: 18px;
       font-family: $font-mer;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
       text-align: center;
     }
     img{
       width: 150px;
       margin-bottom: 15px;
+      @include mqmax($size-sm){
+        width: 100px;
+      }
     }
     span{
       font-size: 16px;
@@ -29,7 +37,10 @@
     a{
       font-size: 16px;
       position: absolute;
-      bottom: 90px;
+      bottom: 70px;
+      @include mqmax($size-sm){
+        bottom: 50px;
+      }
     }
   }
 }

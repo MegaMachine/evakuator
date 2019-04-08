@@ -2,18 +2,14 @@
   .section-title{
     margin-bottom: 40px;
   }
-  .row{
-    &>div{
-      margin-left: 25vw;
-      @include mqmax($size-xs){
-        margin-left: 15vw;
-      }
-    }
+  .section-text{
+    text-align: center;
   }
   p{
     display: flex;
     align-items: center;
     font-size: 18px;
+    justify-content: center;
     &:before{
       content: "";
       display: block;
